@@ -1,0 +1,47 @@
+.navbar {
+  background-color: #060606;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.486),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand img {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+
+  .navbar-brand {
+    padding: 0;
+  }
+  .logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+  }
+
+  .navbar-brand {
+    padding: 0;
+  }
+  .navbar {
+    min-height: 40px;
+  }
+}

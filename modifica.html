@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Online - Modifica Prodotto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./backoffice.html">Backoffice</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+      <h1>Modifica Prodotto</h1>
+      <form id="edit-product-form">
+        <!-- Campi del form per modificare il prodotto -->
+        <div class="form-group">
+          <label for="product-name">Nome Prodotto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="product-name"
+            placeholder="Inserisci nome"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="product-description">Descrizione</label>
+          <textarea
+            class="form-control"
+            id="product-description"
+            placeholder="Inserisci descrizione"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="product-brand">Marca</label>
+          <input
+            type="text"
+            class="form-control"
+            id="product-brand"
+            placeholder="Inserisci marca"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="product-imageUrl">URL Immagine</label>
+          <input
+            type="url"
+            class="form-control"
+            id="product-imageUrl"
+            placeholder="Inserisci URL dell'immagine"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="product-price">Prezzo</label>
+          <input
+            type="number"
+            class="form-control"
+            id="product-price"
+            placeholder="Inserisci prezzo"
+            required
+          />
+        </div>
+        <button type="button" id="save-btn" class="btn btn-primary">
+          Salva Modifiche
+        </button>
+        <button type="button" id="delete-btn" class="btn btn-danger">
+          Elimina Prodotto
+        </button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./modifica.js"></script>
+  </body>
+</html>
