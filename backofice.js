@@ -25,26 +25,26 @@ async function loadProducts() {
       container.innerHTML = "";
       products.forEach((product) => {
         const productCard = `
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
-      <div class="card-body product-card-body"> <!-- Added class 'product-card-body' -->
-        <h5 class="card-title">${product.name}</h5>
-        <p class="card-text">${product.description}</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button data-product-id="${product._id}" class="btn btn-sm btn-outline-secondary edit-btn">Edit</button>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
+        <div class="card-body product-card-body"> <!-- Added class 'product-card-body' -->
+          <h5 class="card-title">${product.name}</h5>
+          <p class="card-text">${product.description}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button data-product-id="${product._id}" class="btn btn-sm btn-outline-secondary edit-btn">Modifica</button>
+            </div>
+            <small class="text-muted">${product.price} €</small>
           </div>
-          <small class="text-muted">${product.price} €</small>
         </div>
       </div>
     </div>
-  </div>
-`;
+  `;
         container.innerHTML += productCard;
       });
 
-      // Aggiungi l'evento click ai pulsanti "Edit"
+      // Aggiungi l'evento click ai pulsanti "Modifica"
       const editButtons = document.querySelectorAll(".edit-btn");
       editButtons.forEach((editButton) => {
         editButton.addEventListener("click", (event) => {
